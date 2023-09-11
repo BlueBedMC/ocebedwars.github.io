@@ -1,0 +1,116 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: white;
+}
+
+header {
+  background-color: #0d0d0d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* Ensure items are in a row */
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.server-ip {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+}
+
+#copy-button {
+  margin-left: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#copy-button:hover {
+  background-color: #2980b9;
+}
+
+nav ul {
+  list-style-type: none;
+  background-color: #0d0d0d;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #1f1f1f;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: mediumpurple;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: blueviolet;
+}
+
+.announce {
+  
+}
+
+.bluebedpic {
+  height: auto;
+  width: 50px;
+}
+
