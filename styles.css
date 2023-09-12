@@ -1,4 +1,4 @@
-/* styles.css */
+/* Home Page Stuff */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -133,7 +133,48 @@ h2 {
   width: 50px;
 }
 
-/* Style for mobile-friendly buttons */
+/* Famous page stuff */
+
+.player-div {
+  border-radius: 3px;
+  padding: 3px;
+  margin-bottom: 5px;
+  background-color: #343434;
+  width: 200px;
+  height: auto;
+  display: inline-block;
+}
+
+.player-div-long {
+  border-radius: 3px;
+  padding: 3px;
+  margin-bottom: 5px;
+  background-color: #343434;
+  width: 250px;
+  height: auto;
+  display: inline-block;
+}
+
+.player-img {
+  height: auto;
+  width: 100px;
+  align-items: left;
+}
+
+.player-name {
+  float: right;
+  align-items: right;
+  margin-top: 75px;
+}
+
+.famous-background {
+  background-color: #232323;
+  padding: 3px;
+  border: 3px;
+  margin-bottom: 10px;
+}
+
+/* MOBILE STUFF!!! */
 .mobile-buttons {
   display: none;
   flex-direction: column;
