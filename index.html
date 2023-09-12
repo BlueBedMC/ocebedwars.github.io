@@ -10,18 +10,25 @@
 
 <body>
   <header>
+    <div class="mobile-buttons">
+      <button id="toggle-mobile-buttons" class="btn">Toggle Menu</button>
+    </div>
+
     <div class="header-buttons">
       <a href="https://shop.ocebedwars.com" class="btn">Shop</a>
       <a href="https://dsc.ocebedwars.com" class="btn">Discord</a>
       <a href="rules.html" class="btn">Rules</a>
     </div>
     <h1>OCE Bedwars</h1>
-    <div class="server-ip">
-      <p>Server IP:</p>
-      <input type="text" value="play.ocebedwars.com" readonly id="server-ip-input">
-      <button id="copy-button">Copy</button>
-    </div> 
+    <div class="header-buttons">
+      <div class="server-ip">
+        <p>Server IP:</p>
+        <input type="text" value="play.ocebedwars.com" readonly id="server-ip-input">
+        <button id="copy-button">Copy</button>
+      </div>
+    </div>
   </header>
+  
 
   <main>
 
@@ -65,7 +72,7 @@
       <section id="owners">
         <h2>Server Owners</h2>
         <div class="owner">
-          <img src="" alt="Astqro Picture" class="Astqropic">
+          <img src="imgs/astqro.jpg" alt="Astqro Picture" class="astqropic">
           <h3>Astqro</h3>
           <p>Astqros Page: <a class="btn" href="astqro.html">Click me</a></p>
         </div>
@@ -80,6 +87,16 @@
   <footer>
     <p>&copy; 2023 OCE Bedwars</p>
   </footer>
+  <div class="overlay-menu" id="overlay-menu">
+    <ul>
+      <li><a href="#" id="cancel-menu">Exit</a></li>
+      <li><a href="https://shop.ocebedwars.com">Shop</a></li>
+      <li><a href="https://dsc.ocebedwars.com">Discord</a></li>
+      <li><a href="rules.html">Rules</a></li>
+      <li><a href="announcements.html">Announcements</a></li>
+      <li>Server IP: <input type="text" value="play.ocebedwars.com" readonly></li>
+    </ul>
+  </div>
 
   <script src="script.js"></script>
 </body>

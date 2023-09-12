@@ -14,3 +14,24 @@ copyButton.addEventListener("click", () => {
     // Deselect the text
     serverIpInput.setSelectionRange(0, 0);
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("toggle-mobile-buttons");
+    const overlayMenu = document.getElementById("overlay-menu");
+    const cancelMenu = document.getElementById("cancel-menu");
+  
+    toggleButton.addEventListener("click", function () {
+      overlayMenu.style.display === "block"
+        ? (overlayMenu.style.display = "none")
+        : (overlayMenu.style.display = "block");
+    });
+
+    cancelMenu.addEventListener("click", function () {
+        overlayMenu.style.display = "none";
+    });
+});
+  
+  
+  
+  
+  
