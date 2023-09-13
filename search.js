@@ -78,6 +78,9 @@ const jsonData = {
 
     if (playerName == "") {
         location.href = "index.html";
+    } else if (playerName.includes(".") || playerName.includes("!") || playerName.includes("@") || playerName.includes("#") || playerName.includes("$") || playerName.includes("%") || playerName.includes("^") || playerName.includes("&") || playerName.includes("*") || playerName.includes("(") || playerName.includes(")") || playerName.includes(",") || playerName.includes("/") || playerName.includes("~") || playerName.includes("`") || playerName.includes("<") || playerName.includes(">") || playerName.includes("+") || playerName.includes("=") || playerName.includes("-") || playerName.includes(";") || playerName.includes(":") || playerName.includes("\"") || playerName.includes("'") || playerName.includes("{") || playerName.includes("}") || playerName.includes("[") || playerName.includes("]") || playerName.includes(" ")) {
+        location.href = "index.html";
+        alert("Cannot include special characters or spaces!");
     } else {
         // Sets the player's name in the title
         const playerTitle = document.getElementById('getPlayerName');

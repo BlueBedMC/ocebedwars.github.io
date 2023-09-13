@@ -1,22 +1,37 @@
-/* Home Page Stuff */
-body {
-  font-family: Arial, sans-serif;
+body, h1, h2, h3, p {
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Global Styles */
+body {
   background-color: #121212;
   color: white;
 }
 
 header {
   background-color: #0d0d0d;
-  color: white;
-  text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  /* Ensure items are in a row */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto; /* Center the content horizontally */
+  padding: 20px;
+  display: flex; /* Use flexbox to center vertically */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: flex-start; /* Align children to the top */
+}
+
+.header-title {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .header-buttons {
@@ -72,7 +87,7 @@ nav a:hover {
 }
 
 main {
-  max-width: 800px;
+  width: 600px;
   margin: 0 auto;
   padding: 20px;
   background-color: #1f1f1f;
@@ -101,36 +116,62 @@ h2 {
   transition: background-color 0.3s ease;
 }
 
+.btn-toggle {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: mediumpurple;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
 .btn:hover {
   background-color: blueviolet;
 }
 
 .announce, .prev-announce {
-  border-radius: 1px;
   background-color: #343434;
-  padding: 3px;
-  margin-bottom: 5px;
-}
-
-.announce-user {
-  font-size: 14px;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .announce-user-pic {
-  padding: 2px;
-  margin-top: 12px;
-  height: auto;
-  width: 16px;
-  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.announce-user {
+  margin-left: 0px;
+  font-weight: bold;
+  color: white;
 }
 
 .announce-title {
-  font-size: 20px;
+  margin-top: 10px;
+  color: #3498db;
 }
 
-.bluebedpic, .astqropic {
-  height: auto;
-  width: 50px;
+.astqropic, .bluebedpic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.owner {
+  background-color: #343434;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Famous page stuff */
@@ -181,6 +222,9 @@ h2 {
   background-color: transparent;
   color: white;
   margin-right: 10px;
+  border-color: white;
+  margin-right: 10px;
+  border-radius: 25px;
 }
 
 .search {
@@ -260,7 +304,19 @@ h2 {
   .header-buttons {
     display: none;
   }
+  main {
+    width: 350px;
+  }
   .mobile-buttons {
     display: flex;
   }
+  .searchBar {
+    width: 300px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    margin-right: 10px;
+    border-radius: 25px;
+  }
+  
 }

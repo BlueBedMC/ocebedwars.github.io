@@ -10,9 +10,10 @@
 </head>
 
 <body>
+<div class="container">
   <header>
     <div class="mobile-buttons">
-      <button id="toggle-mobile-buttons" class="btn">Toggle Menu</button>
+      <button id="toggle-mobile-buttons" class="btn-toggle">Toggle Menu</button>
     </div>
 
     <div class="header-buttons">
@@ -21,18 +22,22 @@
       <a href="rules.html" class="btn">Rules</a>
       <a href="announcements.html" class="btn">Announcements</a>
     </div>
-    <h1>OCE Bedwars</h1>
-    <input id="searchBar" placeholder="Search player..." type="text" class="searchBar" onblur="getPlayer();">
+    <h1 class="header-title">OCE Bedwars</h1>
     <div class="header-buttons">
+      <input id="searchBar" placeholder="Search player..." type="text" class="searchBar" onblur="getPlayer();">
       <div class="server-ip">
         <p>Server IP:</p>
         <input class="server-ip-input" type="text" value="play.ocebedwars.com" readonly id="server-ip-input">
         <button id="copy-button">Copy</button>
       </div>
+	  </div>
   </header>
   
 
   <main>
+    <div class="mobile-buttons">
+      <input id="searchBar" placeholder="Search player..." type="text" class="searchBar" onblur="getPlayer();">
+    </div>
 
     <section id="announcements">
       <h2>Announcements</h2>
@@ -41,13 +46,13 @@
         For announcement, Use the following:
         
         <div class="announce">
-        <img src="imgs/<YOUR PICTURE>" class="announce-user-pic">
-        <p class="announce-user">[YOUR USER]</p>
-        <h3 class="announce-title">[TITLE]</h3>
-        <hr>
-        <p>[ANNOUNCEMENT]</p>
-        <p>[ANNOUNCEMENT]</p>
-      </div>
+          <img src="imgs/<YOUR PICTURE>" class="announce-user-pic">
+          <p class="announce-user">[YOUR USER]</p>
+          <h3 class="announce-title">[TITLE]</h3>
+          <hr>
+          <p>[ANNOUNCEMENT]</p>
+          <p>[ANNOUNCEMENT]</p>
+        </div>
         
         Do <p> to add a new line
         Do <a href="[LINK]">[TEXT]</a> for a link
@@ -57,6 +62,7 @@
         page under the comment. :)
 
       -->
+
       <div class="announce">
         <img src="imgs/blue_bed.jpg" class="announce-user-pic">
         <p class="announce-user">Blue_Bed</p>
@@ -98,6 +104,7 @@
       <li><a href="rules.html">Rules</a></li>
       <li><a href="announcements.html">Announcements</a></li>
       <li>Server IP: <input type="text" value="play.ocebedwars.com" readonly></li>
+      <li><input id="searchBar" placeholder="Search player..." type="text" class="searchBar" onblur="getPlayer();"></li>
     </ul>
   </div>
 
