@@ -3,12 +3,13 @@ Wow! You found this page! This is all of the code for the https://ocebedwars.com
 take the entire website and use it as your own!
 
 # Current Source Code
-> imgs >
+> imgs ===
 > - blue_bed_skin.png
 > - astqroid_skin.png
 > - hqx_skin.png
 > - blue_bed.jpg
 > - astqro.jpg
+> ===
 > announcements.html
 > astqro.html
 > bluebed.html
