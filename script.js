@@ -31,7 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
   
-  
-  
-  
-  
+
+
+//Search Player Bar
+function getPlayer() {
+    const playerName = document.getElementById("searchBar").value;
+    location.href = "search.html?player=" + playerName;
+    console.log(playerName)
+}
