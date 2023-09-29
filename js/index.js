@@ -2,7 +2,7 @@ import { API_URL } from "./global_config.js"
 
 const newsElement = document.getElementById("news")
 
-fetch(API_URL + "/news")
+fetch(API_URL + "/api/news")
   .then(res => res.json())
   .then(news => renderNews(news))
   .catch(error => {
@@ -11,7 +11,11 @@ fetch(API_URL + "/news")
   })
 
 async function renderNews(news) {
-  await fetch(API_URL + "/users?id=" + news.map(i => i.owner).join(","))
+  if (news.length == 0) {
+    newsElement.innerText = "There has been no news posted."
+    return
+  }
+  await fetch(API_URL + "/api/users?id=" + [...new Set(news.map(i => i.owner))].join(","))
   .then(res => res.json())
   .then(users => {
     newsElement.innerHTML = ""

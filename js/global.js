@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-
   document.getElementById("copy-ip").addEventListener("click", () => {
     copyTextToClipboard("ocebedwars.com")
   })
-
 })
 
 function copyTextToClipboard(text) {

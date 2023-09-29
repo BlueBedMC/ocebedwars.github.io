@@ -13,3 +13,27 @@
   background: rgb(197, 184, 0);
   color: black;
 }
+
+.badge-dev {
+  background: rgb(112, 0, 134);
+}
+
+.badge-helper {
+  background: rgb(0, 62, 134);
+}
+
+.badge-admin {
+  background: rgb(168, 27, 27);
+}
+
+.badge-mod {
+  background: rgb(0, 116, 10);
+}
+
+.badge-jr_helper {
+  background: rgb(0, 89, 124);
+}
+
+.badge-builder {
+  background: rgb(0, 59, 15);
+}
