@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --text: #fff;
+  --bg1: #111;
+  --bg2: #1d1d1d;
+  --bg3: #242424;
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: var(--bg1);
+  color: var(--text)
+}
+
+.a-no-style {
+  color: var(--text);
+  text-decoration: none;
+}
+
+main {
+  /* 100% - header_height - (header_padding x 2) */
+  height: calc(100% - (23px + (10px * 2)));
+  overflow: hidden;
+}
+
+.container {
+  width: 70%;
+  background: var(--bg3);
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.news-item {
+  background: var(--bg2);
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.news-item .user {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.news-item .user div {
+  text-align: center;
+}
+
+.news-item .user img {
+  border-radius: 50%;
+}
+
+.news-content .title {
+  display: inline;
+}

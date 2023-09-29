@@ -1,0 +1,38 @@
+header {
+  background: var(--bg2);
+  color: var(--text);
+  padding: 10px;
+  user-select: none;
+  display: grid;
+  grid-template-columns: 1fr 120px 1fr;
+  height: 23px;
+}
+
+header .links a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 19px;
+  font-weight: 100;
+}
+
+header .center {
+  font-size: 19px;
+  text-align: center;
+  font-weight: 900;
+}
+
+header .right {
+  text-align: right;
+}
+
+header .right .copy {
+  position: relative;
+  top: 2px;
+}
+header .socials, header .links {
+  display: inline;
+}
+header .socials img {
+  margin: 0 8px;
+}

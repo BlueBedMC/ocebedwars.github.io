@@ -1,0 +1,15 @@
+.badge {
+  font-size: 12px;
+  font-weight: 900;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.badge-owner {
+  background: rgb(121, 0, 0);
+}
+
+.badge-media {
+  background: rgb(197, 184, 0);
+  color: black;
+}

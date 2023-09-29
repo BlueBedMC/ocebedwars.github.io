@@ -1,114 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OCE Bedwars | 1.8 Minigames Server</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>OCE Bedwars</title>
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/global.css">
+
+  <script src="/js/global.js" type="module" defer></script>
+  <script src="/js/index.js" type="module" defer></script>
 </head>
-
 <body>
-<div class="container">
+  
   <header>
-    <div class="mobile-buttons">
-      <button id="toggle-mobile-buttons" class="btn-toggle">Toggle Menu</button>
+    <nav>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="/rules/">Rules</a>
+        <a href="https://store.ocebedwars.com" target="_blank">Store <img src="/assets/icon/link.svg" width="12" alt=""></a>
+      </div>
+      <div class="socials">
+        <a href="https://dsc.gg/ocebedwars" target="_blank"><img src="/assets/icon/discord.svg" width="20" alt=""></a>
+        <a href="https://www.youtube.com/@OCEBedwars" target="_blank"><img src="/assets/icon/youtube.svg" width="20" alt=""></a>
+      </div>
+    </nav>
+
+    <div class="center">
+      <span class="title">OCE Bedwars</span>
     </div>
 
-    <div class="header-buttons">
-      <a href="https://shop.ocebedwars.com" class="btn">Shop</a>
-      <a href="https://dsc.ocebedwars.com" class="btn">Discord</a>
-      <a href="rules.html" class="btn">Rules</a>
-      <a href="announcements.html" class="btn">Announcements</a>
+    <div class="right">
+      <a href="#" class="a-no-style" id="copy-ip">OCEBedwars.com <img src="/assets/icon/copy.svg" width="15" alt="[Copy]" class="copy"></a>
     </div>
-    <h1 class="header-title">OCE Bedwars</h1>
-    <div class="header-buttons">
-      <input id="searchBar" placeholder="Search player..." type="text" class="searchBar" onblur="getPlayer();">
-      <div class="server-ip">
-        <p>Server IP:</p>
-        <input class="server-ip-input" type="text" value="play.ocebedwars.com" readonly id="server-ip-input">
-        <button id="copy-button">Copy</button>
-      </div>
-	  </div>
   </header>
-  
 
   <main>
-    <div class="mobile-buttons">
-      <input id="searchBar" placeholder="Search player..." type="text" class="searchBar" onblur="getPlayer();">
+    <div class="container">
+      <h2>Latest News</h2>
+
+      <div id="news">
+        Fetching news...
+      </div>
+
     </div>
-
-    <section id="announcements">
-      <h2>Announcements</h2>
-      <!--
-
-        For announcement, Use the following:
-        
-        <div class="announce">
-          <img src="imgs/<YOUR PICTURE>" class="announce-user-pic">
-          <p class="announce-user">[YOUR USER]</p>
-          <h3 class="announce-title">[TITLE]</h3>
-          <hr>
-          <p>[ANNOUNCEMENT]</p>
-          <p>[ANNOUNCEMENT]</p>
-        </div>
-        
-        Do <p> to add a new line
-        Do <a href="[LINK]">[TEXT]</a> for a link
-        Do not forget the extension (.png, .gif, .jpg) at the end of your picture.
-        
-        Once we have reached 3 posts on the home page, copy and paste it in the announcements
-        page under the comment. :)
-
-      -->
-
-      <div class="announce">
-        <img src="imgs/blue_bed.jpg" class="announce-user-pic">
-        <p class="announce-user">Blue_Bed</p>
-        <h3 class="announce-title">Server Release</h3>
-        <hr>
-        <p>The server release date hasnt been decided yet.</p>
-        <p>To find out updates, join the <a href="https://dsc.ocebedwars.com">discord</a>.</p>
-      </div>
-
-      <div class="prev-announce">
-        <p>Previous Announcements can be found <a href="announcements.html">here</a>.</p>
-      </div>
-    </section>
-    <section>
-      <section id="owners">
-        <h2>Server Owners</h2>
-        <div class="owner">
-          <img src="imgs/astqro.jpg" alt="Astqro Picture" class="astqropic">
-          <h3>Astqro</h3>
-          <p>Astqros Page: <a class="btn" href="astqro.html">Click me</a></p>
-        </div>
-        <div class="owner">
-          <img src="imgs/blue_bed.jpg" alt="Blue_Beds Picture" class="bluebedpic">
-          <h3>Blue_Bed</h3>
-          <p>Blue_Beds Page: <a class="btn" href="bluebed.html">Click me</a></p>
-        </div>
-        <p>To find a list of famous people, Click here: <a href="famous.html" class="btn">Famous</a></p>
-      </section>
   </main>
-
-  <footer>
-    <p>&copy; 2023 OCE Bedwars</p>
-  </footer>
-  <div class="overlay-menu" id="overlay-menu">
-    <ul>
-      <li><a href="#" id="cancel-menu">Exit</a></li>
-      <li><a href="https://shop.ocebedwars.com">Shop</a></li>
-      <li><a href="https://dsc.ocebedwars.com">Discord</a></li>
-      <li><a href="rules.html">Rules</a></li>
-      <li><a href="announcements.html">Announcements</a></li>
-      <li>Server IP: <input type="text" value="play.ocebedwars.com" readonly></li>
-      <li><input id="searchBar" placeholder="Search player..." type="text" class="searchBar" onblur="getPlayer();"></li>
-    </ul>
-  </div>
-
-  <script src="script.js"></script>
 </body>
-
 </html>
