@@ -49,6 +49,7 @@ main {
   grid-template-columns: 100px 1fr;
   gap: 15px;
   margin-bottom: 25px;
+  border-radius: 5px;
 }
 
 .news-item .user {
@@ -66,6 +67,15 @@ main {
   border-radius: 50%;
 }
 
-.news-content .title {
+.news-content {
+  line-height: 25px;
+}
+
+.news-content .title, .news-content p {
   display: inline;
+}
+
+.post-date {
+  color: gray;
+  font-size: 12px;
 }

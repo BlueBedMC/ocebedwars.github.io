@@ -1,3 +1,4 @@
+import { time_ago } from "./date_util.js"
 import { API_URL } from "./global_config.js"
 
 const newsElement = document.getElementById("news")
@@ -88,9 +89,19 @@ function renderNewsItem(newsItem, users) {
   title.classList.add("title")
   content.appendChild(title)
 
+  content.appendChild(document.createElement("br"))
+
   const p = document.createElement("p")
   p.innerText = newsItem.text
   content.appendChild(p)
+  
+  if (newsItem.id) {
+    content.appendChild(document.createElement("br"))
+    const date = document.createElement("i")
+    date.classList.add("post-date")
+    date.innerText = "Posted " + time_ago(newsItem.id)
+    content.appendChild(date)
+  }
 
   container.appendChild(content)
   
