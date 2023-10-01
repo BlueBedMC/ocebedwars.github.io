@@ -1,5 +1,5 @@
 // TODO: Make sure CURRENT_MODE is PROD
-export const CURRENT_MODE = "dev" // dev | prod
+export const CURRENT_MODE = "prod" // dev | prod
 
 /** @returns {string} */
 export function StringBasedEnv(obj) {
