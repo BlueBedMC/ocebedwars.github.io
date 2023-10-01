@@ -1,0 +1,32 @@
+<!-- 
+  This page is used as a redirect from pies.cf to assign token.
+  If deleted you will not be able to login.
+  (so keep it lol)
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirect</title>
+  <script>
+    (function() {
+      const query = location.search.slice(1).split("&").map(a => a.split("="))
+      const token = query.find(a => a[0] == "code")
+      if (token != undefined) {
+        localStorage.setItem("token", token[1])
+      } else {
+        document.addEventListener("DOMContentLoaded", () => {
+          // wait for content to load to overwrite default
+          document.write("Token could not be found in query. Could not set token. <a href='/'>[Go back to home]</a>")
+        })
+        return
+      }
+      location.href = "/"
+    })()
+  </script>
+</head>
+<body>
+  Please wait for redirect...
+</body>
+</html>

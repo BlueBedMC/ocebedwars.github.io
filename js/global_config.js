@@ -1,2 +1,12 @@
-export const API_URL = "https://api.ocebedwars.com"
-// export const API_URL = "http://localhost:8080"
+// TODO: Make sure CURRENT_MODE is PROD
+export const CURRENT_MODE = "dev" // dev | prod
+
+/** @returns {string} */
+export function StringBasedEnv(obj) {
+  return obj[CURRENT_MODE]
+}
+
+export const API_URL = StringBasedEnv({
+  dev: "http://localhost:8080",
+  prod: "https://api.ocebedwars.com"
+})

@@ -43,6 +43,7 @@ main {
 }
 
 .news-item {
+  position: relative;
   background: var(--bg2);
   padding: 15px;
   display: grid;
@@ -55,8 +56,8 @@ main {
 .news-item .user {
   display: flex;
   flex-wrap: wrap;
-  /* align-items: center; */
   justify-content: center;
+  line-height: 23px;
 }
 
 .news-item .user div {
@@ -78,4 +79,15 @@ main {
 .post-date {
   color: gray;
   font-size: 12px;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    margin: 0;
+    width: calc(100% - 40px);
+  }
+}
+
+.f-right {
+  float: right;
 }

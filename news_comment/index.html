@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="/css/header.css">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/comments.css">
 
   <script src="/js/global.js" type="module" defer></script>
-  <script src="/js/index.js" type="module" defer></script>
+  <script src="/js/comment_sect.js" type="module" defer></script>
 </head>
 <body>
   
@@ -40,12 +41,36 @@
 
   <main>
     <div class="container">
-      <h2 style="display: inline;">Latest News</h2>
-      <br><br>
+      <h2 style="display: inline;">Post</h2>
+      <br>
+      <br>
       <div id="news">
-        Fetching news...
+        Fetching news item...
+      </div>
+      <h2 style="display: inline;">Comments</h2>
+      <br>
+      <!-- TODO: Live comments w/ socket -->
+      <small>Comments are not updated live.</small> 
+      <br>
+      <br>
+      <div id="comments">
+        Fetching comments...
       </div>
     </div>
   </main>
+
+  <div class="comment-modal" id="comment-modal" hidden>
+    <div class="comment-modal-bg"></div>
+    <div class="comment-modal-content">
+      <form id="comment-modal-form">
+        <h2>Add comment</h2>
+        <textarea id="comment-modal-text" cols="70" rows="5" placeholder="Type your comment..."></textarea>
+        <br>
+        <div class="f-right">
+          <input type="submit" value="Add comment">
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>

@@ -97,10 +97,27 @@ function renderNewsItem(newsItem, users) {
   
   if (newsItem.id) {
     content.appendChild(document.createElement("br"))
+    const dataContainer = document.createElement("div")
+
+    dataContainer.classList.add("data-container")
+
     const date = document.createElement("i")
     date.classList.add("post-date")
-    date.innerText = "Posted " + time_ago(newsItem.id)
-    content.appendChild(date)
+    date.innerText = "Posted " + time_ago(newsItem.id) + ` - ${newsItem.comments} Comment${newsItem.comments == 1 ? "" : "s"}`
+
+    const actions = document.createElement("div")
+    actions.classList.add("f-right")
+
+    const commentSection = document.createElement("a")
+    commentSection.classList.add("post-date")
+    commentSection.href = "/news_comment/?id=" + newsItem.id
+    commentSection.innerText = "[Comment Section]"
+    actions.appendChild(commentSection)
+    
+    dataContainer.appendChild(date)
+    dataContainer.appendChild(actions)
+
+    content.appendChild(dataContainer)
   }
 
   container.appendChild(content)

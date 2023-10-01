@@ -1,0 +1,44 @@
+.comment-modal {
+  position: absolute;
+}
+
+.comment-modal-bg {
+  position: fixed;
+  inset: 0;
+  background: rgb(0,0,0,0.5);
+  z-index: 1000;
+}
+
+.comment-modal-content {
+  background: #222;
+  padding: 8px 25px 25px 25px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  z-index: 1001;
+}
+
+.comment-modal-content textarea {
+  background: #111;
+  outline: transparent;
+  border: transparent;
+  resize: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+}
+
+.comment-modal-content input[type=submit] {
+  background: #111;
+  outline: transparent;
+  border: transparent;
+  resize: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  padding: 10px 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
