@@ -173,7 +173,7 @@ document.getElementById("comment-modal-form").addEventListener("submit", async e
     const json = await res.json()
 
     if (json.error) {
-      alert("Failed to post command: " + json.message)
+      alert("Error: " + json.message)
       return
     }
 

@@ -21,6 +21,7 @@
 }
 
 .comment-modal-content textarea {
+  padding: 10px;
   background: #111;
   outline: transparent;
   border: transparent;
