@@ -145,6 +145,10 @@ function renderNewsItem(newsItem, users, newsElement, commentable, isComment) {
 }
 
 function ShowCommentModal() {
+  if (localStorage.getItem("token") == null) {
+    alert("You must login to post comments.")
+    return
+  }
   const modal = document.getElementById("comment-modal")
   modal.hidden = false
 }
@@ -153,6 +157,10 @@ function HideCommentModal() {
   const modal = document.getElementById("comment-modal")
   modal.hidden = true
 }
+
+document.getElementById("comment-modal-close").addEventListener("click", e => {
+  HideCommentModal()
+})
 
 document.getElementById("comment-modal-form").addEventListener("submit", async e => {
   e.preventDefault()

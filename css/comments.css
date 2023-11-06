@@ -43,3 +43,8 @@
   font-weight: 700;
   cursor: pointer;
 }
+
+.comment-modal-close {
+  color: rgb(250, 74, 74);
+  text-decoration: none;
+}
