@@ -1,50 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Player Lookup</title>
-  <link rel="stylesheet" href="/css/header.css">
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="/css/global.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Lookup</title>
+    <link rel="stylesheet" href="/css/player.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/global.css">
 
-  <script src="/js/global.js" type="module" defer></script>
-  <script src="/js/player.js" type="module" defer></script>
+    <script src="/js/global.js" type="module" defer></script>
+    <script src="/js/player.js" type="module" defer></script>
 </head>
+
 <body>
-  
-  <header>
-    <nav>
-      <a href="#" class="menu"></a>
-      <div class="links">
-        <a href="/">Home</a>
-        <a href="/rules/">Rules</a>
-        <a href="https://store.ocebedwars.com" target="_blank">Store <img src="/assets/icon/link.svg" width="12" alt=""></a>
-      </div>
-      <div class="socials">
-        <a href="https://dsc.gg/ocebedwars" target="_blank"><img src="/assets/icon/discord.svg" width="20" alt=""></a>
-        <a href="https://www.youtube.com/@OCEBedwars" target="_blank"><img src="/assets/icon/youtube.svg" width="20" alt=""></a>
-      </div>
-    </nav>
 
-    <div class="center">
-      <span class="title">OCE Bedwars</span>
-    </div>
+    <header>
+        <nav>
+            <a href="#" class="menu"></a>
+            <div class="links">
+                <a href="/">Home</a>
+                <a href="/rules/">Rules</a>
+                <a href="https://store.ocebedwars.com" target="_blank">Store <img src="/assets/icon/link.svg" width="12" alt=""></a>
+            </div>
+            <div class="socials">
+                <a href="https://dsc.gg/ocebedwars" target="_blank"><img src="/assets/icon/discord.svg" width="20" alt=""></a>
+                <a href="https://www.youtube.com/@OCEBedwars" target="_blank"><img src="/assets/icon/youtube.svg" width="20" alt=""></a>
+            </div>
+        </nav>
 
-    <div class="right">
-      <a href="#" class="a-no-style mobile-hidden" id="copy-ip">OCEBedwars.com <img src="/assets/icon/copy.svg" width="15" alt="[Copy]" class="copy"></a>
-      &emsp;
-      <input id="search" placeholder="Player Name">
-      <a href="#" id="login" hidden>Login</a>
-    </div>
-  </header>
+        <div class="center">
+            <span class="title">OCE Bedwars</span>
+        </div>
 
-  <main>
-    <div class="container">
-      <br><br>
-      <img id="player-skin">
-      <h1 id="player-name"></h1>
-    </div>
-  </main>
+        <div class="right">
+            <a href="#" class="a-no-style mobile-hidden" id="copy-ip">OCEBedwars.com <img src="/assets/icon/copy.svg" width="15" alt="[Copy]" class="copy"></a> &emsp;
+            <input id="search" placeholder="Player Name">
+            <a href="#" id="login" hidden>Login</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <br><br>
+            <div id="player">
+                <img id="player-skin">
+                <div class="right">
+                    <h1 id="player-name"></h1>
+                    <div style="float: left; margin-left: 80px" id="bedwars">
+                        <h2 class="§7">Bedwars Stats</h2>
+                        <div style="float: left;" id="bedwars-stats">
+                            <table style="text-align: left; margin-left: 40px;">
+                                <tr>
+                                    <th>WLR:</th>
+                                    <td id="bedwars-wlr"></td>
+                                </tr>
+                                <tr>
+                                    <th>FKDR</th>
+                                    <td id="bedwars-fkdr"></td>
+                                </tr>
+                                <tr>
+                                    <th>Kills</th>
+                                    <td id="bedwars-kills"></td>
+                                </tr>
+                                <tr>
+                                    <th>Deaths</th>
+                                    <td id="bedwars-deaths"></td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
 </body>
+
 </html>

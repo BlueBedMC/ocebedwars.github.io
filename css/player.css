@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Minecraft;
+    src: url("../assets/fonts/Minecraft.otf");
+}
+
+#container {
+    display: flex;
+}
+
+#player {
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Minecraft', sans-serif;
+}
+
+#player-skin {
+    height: 350px;
+    width: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+.right {
+    text-align: right;
+}
+
+#player-name {
+    font-size: 40px;
+}
+
+table {
+    border: 1px black solid;
+    padding: 10px;
+}
+
+td {
+    padding-left: 15px;
+}
+
+.§4 {
+    color: #AA0000;
+}
+
+.§c {
+    color: #FF5555;
+}
+
+.§6 {
+    color: #FFAA00;
+}
+
+.§e {
+    color: #FFFF55;
+}
+
+.§2 {
+    color: #00AA00;
+}
+
+.§a {
+    color: #55FF55;
+}
+
+.§b {
+    color: #55FFFF;
+}
+
+.§3 {
+    color: #00AAAA;
+}
+
+.§1 {
+    color: #0000AA;
+}
+
+.§9 {
+    color: #5655FF;
+}
+
+.§d {
+    color: #FF55FF;
+}
+
+.§5 {
+    color: #AA00AA;
+}
+
+.§f {
+    color: #FFFFFF;
+}
+
+.§7 {
+    color: #AAAAAA;
+}
+
+.§8 {
+    color: #555555;
+}
+
+.§0 {
+    color: #000000;
+}
+
+.§o {
+    font-style: italic;
+}
+
+.§l {
+    font-weight: bold;
+}
